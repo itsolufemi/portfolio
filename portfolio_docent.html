@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Olufemi Davies-Davies - docent">
+    <meta name="author" content="Olufemi Davies-Davies">
+    <title>docent | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Olufemi Davies-Davies</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">home</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page-main">
+    <div class="project-header">
+      <h1 class="section-title">docent ai</h1>
+
+      <div class="project-links">
+          <!----
+          <a href="https://github.com/itsolufemi/docent" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">GH</span>
+              <span>web app repo</span>
+          </a>
+          <a href="https://github.com/itsolufemi/docent" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">GH</span>
+              <span>mobile app repo</span>
+          </a> -->
+          <a href="https://docs.google.com/document/d/10V5SHVnWbf9aemAgiXewvHfzyPjdEymrIBBvDIB5jZ0/edit?usp=sharinghttps://docs.google.com/document/d/10V5SHVnWbf9aemAgiXewvHfzyPjdEymrIBBvDIB5jZ0/edit?usp=sharing" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">JD</span>
+              <span>project journal</span>
+          </a>
+      </div>
+    </div>
+
+    <div class="project-description">
+        <p>Docent is a conversational audio guide designed for art galleries. I've always loved experiencing art in person — the colours more vivid, the scale more commanding — and I wanted to create something that deepens that connection. So I built Docent: a web-based audio guide that uses AI to bring artworks to life through storytelling. It improves on the stale version of audio guides by providing interactivity; users can talk to the application and ask questions, like they would with a human guide.</p>
+        <p>The initial version is a React and Node.js web application powered by OpenAI’s API. However, because of mobile browser restrictions on autoplay, the users would have to press a button to hear every response, which detracted from the user experience. I am now developing a mobile application using React Native (Expo), with a real-time WebSocket connection to OpenAI’s streaming API for low-latency audio playback.</p>
+    </div>
+
+    <div class="project-meta">
+        <p><strong>Languages:</strong> JavaScript, Node.js, React, React Native (Expo), HTML, CSS</p>
+        <p><strong>APIs/Services:</strong> OpenAI Chat API, Whisper & Google Speech-to-Text (STT), OpenAI TTS</p>
+        <p><strong>Cloud:</strong> AWS S3 for audio storage & Puppeteer for web scraping</p>
+    </div>
+
+    <div class="project-demo-grid">
+        <div class="project-video-card">
+            <div class="project-video-frame">
+                <iframe src="https://www.youtube.com/embed/xzA27txyytQ?si=mLKMObcgkGE46-4U" allowfullscreen></iframe>
+            </div>
+            <h3 class="project-video-title">docent react-native (expo) demo</h3>
+        </div>
+
+        <div class="project-video-card">
+            <div class="project-video-frame">
+                <iframe src="https://www.youtube.com/embed/fLuhFi7B0Ro?si=QVxIRGnELlBhMKLI" allowfullscreen></iframe>
+            </div>
+            <h3 class="project-video-title">docent web app demo</h3>
+        </div>
+
+        <div class="project-video-card">
+            <div class="project-video-frame">
+                <iframe src="https://www.youtube.com/embed/o-VBQwsy4uc?si=WowaWkv5Mrt8Ljjg" allowfullscreen></iframe>
+            </div>
+            <h3 class="project-video-title">docent recommendation algo demo</h3>
+        </div>
+    </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>

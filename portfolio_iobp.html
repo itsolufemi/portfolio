@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Olufemi Davies-Davies - iobp">
+    <meta name="author" content="Olufemi Davies-Davies">
+    <title>iobp | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Olufemi Davies-Davies</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">home</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page-main">
+        <div class="project-header">
+          <h1 class="section-title">the interoperable blockchain platform</h1>
+
+          <div class="project-links">
+              <a href="https://github.com/itsolufemi/iobp" target="_blank" class="project-link-chip">
+                  <span class="project-chip-icon">GH</span>
+                  <span>GitHub repo</span>
+              </a>
+              <a href="https://drive.google.com/file/d/12-hkj9E_bsBVP2FAv_d9w8pXwrVWziAN/view" target="_blank" class="project-link-chip">
+                  <span class="project-chip-icon">RP</span>
+                  <span>Project report</span>
+              </a>
+          </div>
+        </div>
+
+        <div class="project-description">
+            <p>The Interoperable Blockchain Protocol (IOBP) was my final year project for the BSc (Hons) Computer Science degree at the University of Westminster. The project confronts the challenge of harmful content spreading rapidly across social media by creating a collaborative moderation framework for competing platforms. The IOBP is a proof-of-concept for a consortium blockchain that allows social media companies to share information about media files securely and transparently. Instead of assigning a new ID, the system is designed to extract an existing unique identifier from the media file itself, such as its EXIF data. This ID is then used to log the file's history on an immutable blockchain every time it's uploaded, creating a verifiable record that enables powerful, cross-platform moderation.</p>
+            <p>Here is an example of its possible real-world application: A news photographer posts an image of a peaceful protest on Instagram. Two months later, the same image resurfaces on Twitter, falsely claiming it shows a violent riot in another city. Because the image has a unique media ID and was originally tagged as part of a news post, the second usage is flagged by the IOBP as misleading. The blockchain would show a list of all transactions featuring that image (using the ID) up until the original authorship. Once the second usage has been marked as 'context misleading', there would be a link to the original usage of that image, to show the true context of the image. Another example is an ex-partner sharing a private image of someone on a niche forum. The image begins to spread across multiple social networks. The victim reports the image on one platform. That triggers a blockchain transaction recording the image’s unique ID and marking it as banned. As a result, all consortium platforms detect any re-upload attempts and automatically block them before publishing.</p>
+            <p>I built the entire IOBP prototype using Node.js, which allowed me to leverage my strong command of JavaScript to focus on the system's complex architectural and logical challenges rather than a new syntax.</p>
+        </div>
+
+        <div class="project-demo-grid">
+            <div class="project-video-card">
+                <div class="project-video-frame">
+                    <iframe src="https://www.youtube.com/embed/NtTRycZ6bT4?si=wxxISfC_i1sE_739" allowfullscreen></iframe>
+                </div>
+                <h3 class="project-video-title">iobp demo i</h3>
+            </div>
+
+            <div class="project-video-card">
+                <div class="project-video-frame">
+                    <iframe src="https://www.youtube.com/embed/NtTRycZ6bT4" allowfullscreen></iframe>
+                </div>
+                <h3 class="project-video-title">Iobp demo contd</h3>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
