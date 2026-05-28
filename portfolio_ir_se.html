@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Olufemi Davies-Davies - docent">
+    <meta name="author" content="Olufemi Davies-Davies">
+    <title>ECS736P Information Retrieval Group Assignment Search Engine | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Olufemi Davies-Davies</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">home</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page-main">
+    <div class="project-header">
+      <h1 class="section-title">tate gallery collection search engine</h1>
+
+      <div class="project-links">
+          <a href="https://github.com/itsolufemi/ecs736p_ir_design" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">GH</span>
+              <span>design specs</span>
+          </a>
+          <a href="https://github.com/itsolufemi/ecs736p_ir_app" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">GH</span>
+              <span>project repository</span>
+          </a> 
+          <a href="https://github.com/itsolufemi/ecs736p_ir_design/blob/main/IR_group_24_Assignment_1_report.pdf" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">JD</span>
+              <span>project report</span>
+          </a>
+      </div>
+    </div>
+
+    <div class="project-description">
+        <p>This project was undertaken as a collaborative group effort by Me (Olufemi Davies-Davies) and Rohan Burman as part of the MSc Artificial Intelligence program at Queen Mary University of London for the Information Retrieval module. Driven by the curriculum's requirement to design, implement, and validate a bespoke search application from scratch, the team engineered and delivered the Tate Gallery AI Search System; a dual-path hybrid retrieval engine built over a corpus of digitized artwork records. To satisfy the first assignment, the team produced a technical report featuring an extensive literature review of foundational retrieval frameworks ranging from classic probabilistic models and structured fielded extensions to deep dense passage retrieval methods alongside a justified architectural roadmap for their system. For the final assignment, the contributors translated this design into a fully functional software ecosystem, submitting a modular Python codebase, summarizing presentation slides, a methodology video, and an interactive live demonstration video navigating real-world search scenarios.
+            </p>
+        
+        <p>The core deliverable features a hybrid pipeline that merges sparse lexical matching with dense semantic recall to efficiently resolve vocabulary mismatch. The sparse pathway applies heavy term-weighting across metadata fields like title, artist, and medium to ensure near-perfect precision for exact known-item lookups. Concurrently, the dense pathway captures deep contextual meaning by splitting unstructured data into overlapping chunks and calculating exact mathematical similarity against query vectors. These distinct scores are unified using Reciprocal Rank Fusion, which is enhanced by intent-aware re-ranking multipliers that favor dominant artist surnames, prioritize primary artistic mediums, and filter out archival junk records.
+            </p>
+        
+        <p>Beyond the retrieval orchestrator, the group delivered an automated data ingestion pipeline that downloads, cleans, and structures remote gallery files. Users can interact with the engine via an advanced Graphical User Interface containing pagination, artwork thumbnails, and dynamic matching explanations, or through a streamlined Command Line Interface. Both interfaces support system utility commands that hook directly into an automated unit testing suite and a sophisticated evaluation framework. This framework benchmarks the engine over a domain-specific set of fifty queries, confirming a rapid sub-50 millisecond operational response time alongside standard academic performance metrics including Mean Reciprocal Rank, Normalized Discounted Cumulative Gain, and overall retrieval success rates.
+            </p>
+    </div>
+
+    <div class="project-meta">
+        <p><strong>Languages:</strong> Python </p>
+    </div>
+
+    <div class="project-demo-grid">
+        <div class="project-video-card">
+            <div class="project-video-frame">
+                <iframe src="https://www.youtube.com/embed/_hLEDLD50m8?si=6sgsMAttkgXmfulA" allowfullscreen></iframe>
+            </div>
+            <h3 class="project-video-title">assignment presentation</h3>
+        </div>
+
+        <div class="project-video-card">
+            <div class="project-video-frame">
+                <iframe src="https://www.youtube.com/embed/rprFiyLzgFo?si=dPoyapdYR4OHMJd5" allowfullscreen></iframe>
+            </div>
+            <h3 class="project-video-title">search engine demonstration</h3>
+        </div>
+    </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
