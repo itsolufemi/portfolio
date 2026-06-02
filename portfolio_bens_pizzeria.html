@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Olufemi Davies-Davies - ben's pizzeria">
+    <meta name="author" content="Olufemi Davies-Davies">
+    <title>ben's pizzeria | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Olufemi Davies-Davies</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">home</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page-main">
+    <div class="project-header">
+      <h1 class="section-title">ben's pizzeria</h1>
+
+      <div class="project-links">
+          <a href="https://github.com/itsolufemi/bens_pizzeria/" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">GH</span>
+              <span>project repository</span>
+          </a> 
+          <a href="https://github.com/itsolufemi/bens_pizzeria/blob/main/report.pdf" target="_blank" class="project-link-chip">
+              <span class="project-chip-icon">JD</span>
+              <span>project report</span>
+          </a>
+      </div>
+    </div>
+
+    <div class="project-description">
+        <p> 
+            This project features a fully functional MySQL relational database built from the ground up to manage the backend operations of a fictional takeout and delivery business, "Ben's Pizzeria." Inspired by a data analytics brief, the repository demonstrates end-to-end database design, data engineering, and advanced SQL querying.
+
+The development process began by normalizing raw business requirements into a structured relational schema. This involved separating operational data into 10 distinct tables across Order Management, Inventory Tracking, and Staff Payroll. After defining the architecture and strict key constraints with an Entity-Relationship Diagram (ERD), mock data was generated and imported. This ingestion phase required hands-on data cleaning to resolve real-world deployment challenges, such as EOL character mismatches, data type inconsistencies, and primary key constraint violations within Navicat.
+
+Once the schema was populated and validated, the focus shifted to writing the complex SQL views necessary to feed a Business Intelligence dashboard. This included executing multi-table LEFT JOIN operations to unify order transactions, writing nested subqueries to track real-time ingredient depletion, and applying advanced chronological math (TIMEDIFF()) to accurately calculate daily staff payroll.
+
+Ultimately, this project transforms a conceptual business scenario into a structured, optimized, and query-ready database environment that is perfectly prepped for front-end BI visualization.
+        </p>
+    </div>
+
+    <div class="project-meta">
+        <p><strong>Languages:</strong> SQL </p>
+    </div>
+
+    <div class="project-demo-grid">
+        <div class="project-image-container" style="width: 100%; margin-top: 2rem;">
+            <img src="https://raw.githubusercontent.com/itsolufemi/bens_pizzeria/main/erd.png" alt="Ben's Pizzeria Database ERD" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <h3 class="project-video-title" style="text-align: center; margin-top: 1rem;">database entity-relationship diagram (erd)</h3>
+        </div>
+    </div>
+
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
